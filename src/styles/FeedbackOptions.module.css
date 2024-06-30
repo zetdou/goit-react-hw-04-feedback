@@ -1,22 +1,22 @@
 .feedbackBtnWrapper {
-    display: flex;
-    justify-content: baseline;
-    gap: 12px;
+  display: flex;
+  justify-content: baseline;
+  gap: 12px;
 }
 
 .feedbackBtn {
-    cursor: pointer;
-    width: 72px;
-    height: 28px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-size: 11px;
-    background: transparent;
+  cursor: pointer;
+  width: 72px;
+  height: 28px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  background: transparent;
 }
 
 .feedbackBtn:focus,
 .feedbackBtn:hover {
-    border-style: none;
-    background: #2498E6;
-    color: #fff;
+  border-style: none;
+  background: #2498e6;
+  color: #fff;
 }

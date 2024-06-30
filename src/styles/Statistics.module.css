@@ -1,33 +1,33 @@
 .statisticsList {
-    list-style: none; 
-    display: flex;
-    gap: 12px;
-    padding-left: 0;
-    justify-content: baseline;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding-left: 0;
+  justify-content: baseline;
 }
 
 .statisticsListItemGood {
-    font-size: 18px;
-    color: #1CB925;
+  font-size: 18px;
+  color: #1cb925;
 }
 
 .statisticsListItemNeutral {
-    font-size: 18px;
-    color: #899099
+  font-size: 18px;
+  color: #899099;
 }
 
 .statisticsListItemBad {
-    font-size: 18px;
-    color: #FF0000
+  font-size: 18px;
+  color: #ff0000;
 }
 
 .statisticsListItemTotal {
-    font-size: 18px;
-    color: #2498E6;
+  font-size: 18px;
+  color: #2498e6;
 }
 
 .statisticsListItemPercentage {
-    font-size: 18px;
-    color: #EB9D18;
-    text-decoration: underline;
+  font-size: 18px;
+  color: #eb9d18;
+  text-decoration: underline;
 }

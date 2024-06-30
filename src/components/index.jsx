@@ -17,13 +17,13 @@ export default class Feedback extends Component {
   countTotal = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
-  }
+  };
 
   positiveFeedbackPercentage = () => {
     const { good } = this.state;
     const total = this.countTotal();
     return total === 0 ? 0 : Math.round((good / total) * 100);
-  }
+  };
 
   render() {
     const { good, neutral, bad } = this.state;
@@ -37,22 +37,23 @@ export default class Feedback extends Component {
           <FeedbackOptions onLeaveFeedback={this.handleFeedback} />
         </div>
         <h2>Statistics</h2>
-        <Statistics 
-          good={good} 
-          neutral={neutral} 
-          bad={bad} 
-          total={total} 
-          positivePercentage={positivePercentage} />
-      </>  
+        <Statistics
+          good={good}
+          neutral={neutral}
+          bad={bad}
+          total={total}
+          positivePercentage={positivePercentage}
+        />
+      </>
     );
   }
 }
 
 const FeedbackOptions = ({ onLeaveFeedback }) => (
   <div>
-    <button onClick={() => onLeaveFeedback('good')}>Good</button>
-    <button onClick={() => onLeaveFeedback('neutral')}>Neutral</button>
-    <button onClick={() => onLeaveFeedback('bad')}>bad</button>
+    <button onClick={() => onLeaveFeedback("good")}>Good</button>
+    <button onClick={() => onLeaveFeedback("neutral")}>Neutral</button>
+    <button onClick={() => onLeaveFeedback("bad")}>bad</button>
   </div>
 );
 
@@ -64,4 +65,4 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <li>Total: {total}</li>
     <li>Positive feedback: {positivePercentage}%</li>
   </ul>
-)
+);
